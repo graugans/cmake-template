@@ -12,4 +12,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Some useful default settings
 include(cmake/StandardProjectSettings.cmake)
 
+# allow for static analysis options
+set(ENABLE_CLANG_TIDY ON)
+include(cmake/StaticAnalyzers.cmake)
+
 add_subdirectory(src)
